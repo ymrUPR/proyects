@@ -1,0 +1,19 @@
+-=-=-=-=-=-=-=-=-=-= Complejidad de Funciones -=-=-=-=-=-=-=-=-=-=-
+
+getName = O(1). La funcion corre a tiempo constante sin importar el size del vector ya que solo va a editar el primer elemento del vector.
+
+vectorChanger = O(n). La funcion CASI corre a tiempo constante ya que los member functions y sus acciones son O(1) pero utiliza un for loop.
+
+split = O(n). La funcion depende del while loop cual en si depende del largo del file. Queriendo decir que n afectaría la complejidad.
+
+templateExtractor = O(n). La funcion parecia correr en tiempo lineal pero utiliza la funcion split, que fue probada ser O(n).
+
+mapCreator = O(n^2). La funcion entiendo que corre de esta manera ya que los contenidos del while loop tienen un overall complexity de O(n) y el while loop mismo es O(n).
+
+dnaStringCreator = O(1). La funcion no utiliza loops que tengan dependencia de alguna N y sus funciones entiendo que son O(1).
+
+consecutivitySearch = O(n^2). La funcion tiene un for loop que es O(n) y sus contenidos (sin importar si entra al if o else) tambien son O(n).
+
+culpritFinder = O(n^3). La funcion tiene dos for loops, pero, el primer for loop (que es O(n)) contiene una funcion O(n^2), esto me llevo a la conclusion que su complejidad sera O(n^3).
+
+main = O(n^3). Tomando en cuenta que puedo asumir que leer los tokens del file tienen un O(1) y main estar estructurado secuencialmente, concluyo que main sera igual de compleja en Big Oh que la funcion mas compleja. Llevandome a O(n^3).
